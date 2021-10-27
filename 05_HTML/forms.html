@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <table width=700px>
+        <tr>
+            <td>
+                <form name="Form1" method="get" action="http://fe.it-academy.by/TestForm.php">
+                    <fieldset>
+                        <legend>Строка поиска</legend>
+                        <input type="text" MAXLENGTH="10">
+                        <input type="submit" value="Искать">
+                        <br>
+                        <label>  
+                            <input type="radio" name="val1_1" id="rad1" checked> на сайте
+                        </label>
+                        <label> 
+                            <input type="radio" name="val1_2" id="rad2"> в google
+                        </label>    
+                    </fieldset>
+                </form>
+            </td>
+            <td>
+                <form name="Form2" method="get" action="http://fe.it-academy.by/TestForm.php">
+                    <fieldset>
+                        <legend>Строка поиска</legend>
+                        <input type="text" MAXLENGTH="10" AUTOFOCUS placeholder="это обязательное поле" required>
+                        <input type="submit" value="Искать">
+                        <br>
+                        <label>
+                            <input type="radio" name="val2_1" id="rad1"> на сайте
+                        </label>
+                        <label> 
+                            <input type="radio" name="val2_2" id="rad2" checked> в google
+                        </label> 
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form name="Form3" method="get" action="http://fe.it-academy.by/TestForm.php">
+                    <fieldset>
+                        <legend>Авторизируйтесь</legend>
+                        <INPUT TYPE="login" ID="lgn" NAME="login" placeholder="это обязательное поле" required>
+                        <LABEL FOR="lgn">Логин</LABEL>
+                        <br>
+                        <INPUT TYPE="password" ID="passwd" NAME="password" placeholder="это обязательное поле" required>
+                        <LABEL FOR="passwd">Пароль</LABEL>
+                        <br> 
+                        <label>  
+                            <input type="checkbox" name=“val3_1" id="chbox3">  Оставаться в системе
+                        </label>
+                        <br>
+                        <input type="submit" value="Войти">      
+                    </fieldset>
+                </form>
+            </td>
+            <td>
+                <form name="Form4" method="get" action="http://fe.it-academy.by/TestForm.php">
+                    <fieldset>
+                        <legend>Как вам?</legend>
+                        <label>
+                            <input type="radio" name="val4_1" id="rad1" checked> ничего
+                        </label>
+                        <br>
+                        <label> 
+                            <input type="radio" name="val4_2" id="rad2"> неплохо
+                        </label>
+                        <br> 
+                        <label>
+                            <input type="radio" name="val4_3" id="rad1"> хорошо
+                        </label>
+                        <br>
+                        <label> 
+                            <input type="radio" name="val4_4" id="rad2"> супер
+                        </label> 
+                        <br>
+                        <input type="submit" value="Отправить">      
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form name="Form5" method="post" action="http://fe.it-academy.by/TestForm.php">
+                    <fieldset>
+                        <legend>Оставьте Ваш отзыв</legend>
+                        <INPUT TYPE="login" ID="lgn" NAME="login" placeholder="это обязательное поле" required>
+                        <LABEL FOR="lgn">Имя</LABEL>
+                        <br>
+                        <INPUT TYPE="email" ID="mail" NAME="email" placeholder="это обязательное поле" required>
+                        <LABEL FOR="mail">e-mail</LABEL>
+                        <br> 
+                        <textarea name="text_area" lang="ru">
+                         Форма отправки
+                        </textarea>
+                        <br>
+                        <input type="submit" value="Отправить">      
+                    </fieldset>
+                </form>
+            </td>
+            <td>
+                <form name="Form6" method="get" action="http://fe.it-academy.by/TestForm.php">
+                    <fieldset>
+                        <legend>Города РБ</legend>
+                        <select name="list1" id="list1">
+                            <option value="1" selected>Брест</option>
+                            <option value="2">Минск</option>
+                            <option value="0">Витебск</option>
+                        </select>
+                        <select name="list2[]" size="8" multiple id="list2">
+                            <optgroup label="Города РБ">
+                                  <option value="1">Брест</option>
+                                  <option value="2">Минск</option>
+                                  <option value="3">Витебск</option>
+                            </optgroup>
+                            <optgroup label="Города России">
+                                  <option value="4">Москва</option>
+                                  <option value="5">Рязань</option>
+                                  <option value="6">Магадан</option>
+                                  <option value="7">Краснодар</option>
+                            </optgroup>
+                            </select>
+                        <input type="submit" value="Ok">      
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
