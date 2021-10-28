@@ -150,12 +150,10 @@
                 <form name="Form8" method="get" action="http://fe.it-academy.by/TestForm.php">
                     <fieldset>
                         <legend>Строка поиска</legend>
-                        <p>
-                          <input type="text" name="8_1" pattern="[А-Яа-яЁё ]+">
-                        </p>
-                        <p>
-                          <input type="tel" name="8_2" value="+375-__-_______" maxlength="15" pattern="\+375\-[0-9]{2}\-[0-9]{7}">
-                        </p>
+                          <input type="text" name="8_1" pattern="[А-Яа-яЁё ]+" placeholder="Только русские буквы">
+                          <br>
+                          <input type="tel" name="8_2" value="+375-29-1234567" maxlength="15" pattern="\+375\-[0-9]{2}\-[0-9]{7}">
+                          <br>
                         <input type="submit" value="Проверить">  
                     </fieldset>
                 </form>

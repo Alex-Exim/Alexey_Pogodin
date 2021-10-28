@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anketa</title>
+</head>
+<body>
+    <h1 align="center">Заполните анкету</h1>
+    <form name="Form1" method="get" action="http://fe.it-academy.by/TestForm.php">
+        <fieldset>
+            <legend>Личные данные</legend>
+            <input type="text" name="last_name" placeholder="Фамилия" maxlength="25" autofocus required pattern="[А-Яа-яЁё]+">
+            <br>
+            <input type="text" name="name" placeholder="Имя" maxlength="20" required pattern="[А-Яа-яЁё]+">
+            <br>
+            <input type="text" name="sub_name" placeholder="Отчество" maxlength="24" required pattern="[А-Яа-яЁё]+">
+            <input type="submit" value="Проверить">
+            <form name="Form1" method="get" action="http://fe.it-academy.by/TestForm.php">
+                <fieldset>
+                <legend>Паспортные данные</legend>
+                <input type="text" name="last_name" placeholder="AA" maxlength="2" pattern="[А-Яа-яЁё]+">
+                <input type="text" name="last_name" placeholder="1234567" maxlength="7" required pattern="[А-Яа-яЁё]+">
+                </fieldset>
+            </form>
+        </fieldset>
+    </form>
+    <form name="Form1" method="get" action="http://fe.it-academy.by/TestForm.php">
+        <fieldset>
+        <legend>Кнопки управления</legend>
+        <input type="submit" value="Отправить">
+        </fieldset>
+    </form>
+
+</body>
+</html>
