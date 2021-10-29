@@ -16,15 +16,11 @@
             <input type="text" name="name" placeholder="Имя" maxlength="20" required pattern="[А-Яа-яЁё]+">
             <br>
             <input type="text" name="sub_name" placeholder="Отчество" maxlength="24" required pattern="[А-Яа-яЁё]+">
-            <form name="Form2" method="get" action="http://fe.it-academy.by/TestForm.php">
                 <fieldset>
                    <legend>Паспортные данные</legend>
                    <input type="text" name="series" placeholder="AA" maxlength="2" pattern="[A-Z]{2}" style="width:20px">
-                   <input type="text" name="number" placeholder="1234567" maxlength="7" required pattern="[0-9]{7}" style="width:70px">
-                   <input type="submit" value="Проверить">    
+                   <input type="text" name="number" placeholder="1234567" maxlength="7" required pattern="[0-9]{7}" style="width:70px">   
                 </fieldset>
-            </form>
-            <form name="Form3" method="get" action="http://fe.it-academy.by/TestForm.php">
                 <fieldset>
                    <legend>Дата рождения</legend>
                    <input type="text" name="year" placeholder="2000" maxlength="4" pattern="[0-9]{4}" style="width:40px">
@@ -44,11 +40,8 @@
                     <option value="12">Декабрь</option>
                     </select>
                     <br>
-                    <input type="number" min="1" max="31" step="1" name="day">
-                    <br>
-                   <input type="submit" value="Проверить">    
+                    <input type="number" min="1" max="31" step="1" name="day">    
                 </fieldset>
-            </form>
             <select name="nation" requared>
                 <option value="BY" selected>РБ</option>  
                 <option value="RU">РФ</option>  
@@ -56,25 +49,24 @@
             <div>Адрес:</div>
             <textarea name="address" lang="ru">
             </textarea>
+            <input type="submit" value="Проверить"> 
         </fieldset>
     </form>
-    <form name="Form4" method="get" action="http://fe.it-academy.by/TestForm.php">
+    <form name="Form2" method="get" action="http://fe.it-academy.by/TestForm.php">
         <fieldset>
             <legend>Интересы</legend>
-            <form name="Form5" method="get" action="http://fe.it-academy.by/TestForm.php">
                 <fieldset>
                    <legend>Хобби</legend>   
                    <label>
-                   <input type="checkbox" name="F5" value="fishing"> Рыбалка
+                   <input type="checkbox" name="hobby" value="fishing"> Рыбалка
                    <br>
-                   <input type="checkbox" name="F5" value="astronom"> Астрономия
+                   <input type="checkbox" name="hobby" value="astronom"> Астрономия
                    <br> 
-                   <input type="checkbox" name="F5" value="dive"> Дайвинг
+                   <input type="checkbox" name="hobby" value="dive"> Дайвинг
                    <br> 
-                   <input type="checkbox" name="F5" value="stamp"> Марки
+                   <input type="checkbox" name="hobby" value="stamp"> Марки
                    </label>
                 </fieldset>
-            <form name="Form6" method="get" action="http://fe.it-academy.by/TestForm.php">
                 <fieldset>
                    <legend>Домашние животные</legend>
                    <select name="animals" size="11" multiple>
@@ -93,9 +85,9 @@
                         <option value="8">Аист</option>
                         <option value="9">Археоптерикс</option>
                   </optgroup>
-                  </select>
-                  <input type="submit" value="Проверить"> 
+                  </select> 
                 </fieldset>
+            <input type="submit" value="Проверить"> 
         </fieldset>
     </form>
     <form name="Form7" method="get" action="http://fe.it-academy.by/TestForm.php">
@@ -119,10 +111,9 @@
     <form name="Form9" method="get" action="http://fe.it-academy.by/TestForm.php">
         <fieldset>
             <legend>Цифры</legend>
-            <input type="number" min="-2.5" max="2.5" step="0.1"> 
+            <input type="number" min="-2.5" max="2.5" step="0.1" name="number"> 
             <br>
-            <input type="range" min="1" max="10">             
-            <input type="submit" value="Проверить"> 
+            <input type="range" min="1" max="10" name="range">             
         </fieldset>
     </form>
     <form name="Form10" method="get" action="http://fe.it-academy.by/TestForm.php">
