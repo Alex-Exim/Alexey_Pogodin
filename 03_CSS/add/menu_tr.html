@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <style>
+       
         div.MenuLevel1 { 
             width: 736px;
-            transition: all 2s;
+            
             }
-        div.MenuLevel1 > div { background-color: yellow; border: solid blue 1px; position: relative; cursor: pointer; float: left; width: 100px; transition: all 2s;} 
-        div.MenuLevel2 { width: 150px; display: none; transition: all 2s;}
-        div.MenuLevel2 > div { background-color: cyan; border: solid blue 1px; cursor: pointer; transition: all 2s;}
+        div.MenuLevel1 > div { background-color: yellow; border: solid blue 1px; position: relative; cursor: pointer; float: left; width: 100px;} 
+        div.MenuLevel2 { width: 150px; display: none; transition: all .4s;}
+        div.MenuLevel2 > div { background-color: cyan; border: solid blue 1px; cursor: pointer;}
         div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute; left: 80%; top: 90%; z-index: 1;}
         
         @media all and (max-width:736px){
@@ -21,7 +22,7 @@
             }
         div.MenuLevel1 > div { background-color: yellow; border: solid blue 1px; position: relative; cursor: pointer; float: left; width: 100px;}
         div.MenuLevel2 { width: 150px; display: none }
-        div.MenuLevel2 > div { background-color: cyan; border: solid blue 1px; cursor: pointer }
+        div.MenuLevel2 > div { background-color: cyan; border: solid blue 1px; cursor: pointer; transition: all .4s;}
         div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute; left: 80%; top: 90%; z-index: 1 }
         }
     </style>
